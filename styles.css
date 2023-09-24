@@ -374,11 +374,11 @@ body {
     font-weight: 500;
     line-height: 1.29;
   }
-  .footer-list {
+  .footer-social-list {
   }
-  .footer-item {
+  .footer-social-item {
   }
-  .footer-links {
+  .footer-social-links {
   }
   .footer-contacts {
     color: #fff;
@@ -391,7 +391,7 @@ body {
   }
   .footer-adress-list {
   }
-  .adress-list {
+  .adress-item {
   }
   .adress-links {
     color: #fff;
@@ -403,11 +403,11 @@ body {
   }
   .footer-nav {
   }
-  .nav-list {
+  .footer-nav-list {
   }
-  .nav-item {
+  .footer-nav-item {
   }
-  .nav-links {
+  .footer-nav-links {
     color: #fff;
     font-size: 14px;
     font-weight: 500;
@@ -415,8 +415,7 @@ body {
     letter-spacing: -0.02em;
   }
   
-  .nav-links:focus,
-  .nav-links:hover {
+  .footer-nav-links:focus,
+  .footer-nav-links:hover {
     color: #fd9222;
   }
-  
