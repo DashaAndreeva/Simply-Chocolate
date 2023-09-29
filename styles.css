@@ -105,6 +105,11 @@ address {
   gap: 24px;
 }
 
+.header-menu-list:hover,
+.header-menu-list:focus {
+  color: #fd9222;
+}
+
 .header-menu-item {
   display: flex;
   gap: 14px;
