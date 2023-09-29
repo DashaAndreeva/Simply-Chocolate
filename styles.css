@@ -96,32 +96,33 @@ address {
 .header-logo-img {
 }
 .header-menu-list {
+  display: flex;
+  gap: 24px;
+}
+
+.header-menu-item {
+}
+
+.header-menu-link {
   color: #111;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: -0.02em;
-  display: flex;
-  gap: 24px;
-}
-
-.header-menu-list:hover,
-.header-menu-list:focus {
-  color: #fd9222;
-}
-
-.header-menu-item {
-  display: flex;
-  gap: 14px;
-}
-
-.header-menu-title {
-}
-.header-menu-link {
 }
 
 .header-menu-link:hover,
 .header-menu-link:focus {
+  color: #fd9222;
+}
+
+.header-soc-list {
+  display: flex;
+  gap: 14px;
+}
+.header-soc-item {
+}
+.header-soc-link {
 }
 
 /* ======================SECTION 1==================== */
