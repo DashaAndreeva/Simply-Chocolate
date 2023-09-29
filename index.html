@@ -17,7 +17,7 @@
   </head>
   <body>
     <header class="header" id="header">
-      <div class="container">
+      <div class="container header-container">
       <nav class="header-navigation">
         <a href="" class="header-logo">
           <span class="header-logo-italic">SIMPLY</span> CHOCOLATE <img src="./img/logo.svg" alt="logo-chocolate" class="header-logo-img"/>
@@ -29,9 +29,9 @@
           <li class="header-menu-item">
             <a href="#made" class="header-menu-list">How it's made?</a>
           </li>
-          <li>
+          <li class="header-menu-item">
             <a href="#loved" class="header-menu-list">Chocolate is loved</a>
-          </li class="header-menu-item">
+          </li>
         </ul>
       </nav>
 
@@ -56,10 +56,11 @@
           Treat yourself or a loved one to <br> our finest ingredients for a moment
           of pure delight!
         </h1>
-
+        <div class="hero-btns">
         <button type="button" class="hero-btn">Buy now</button>
         <a href="#made" class="hero-btn-link">How it's made</a>
         <a href="#footer" class="hero-btn-down">scroll down</a>
+        </div>
       </div>
       </section>
 
@@ -157,13 +158,15 @@
       <!-- Самостоятельная работа -->
       <section class="made" id="made">
         <div class="container">
-        <h2 class="made-title section-title">How it's <span>made</span>?</h2>
+        <h2 class="made-title section-title">How it's <span>made</span></h2>
+        <div class="made-wrap">
         <img
           src="./img/how-its-made.jpg"
           alt="chocolade-made"
           width="600"
           height="400"
          class="made-img"/>
+         <div class="made-content">
         <h3 class="made-subtitle">
           Try our chocolates today and discover the perfect balance of flavor
         </h3>
@@ -196,6 +199,8 @@
             </p>
           </li>
         </ul>
+        </div>
+      </div>
       </div>
       </section>
 
@@ -331,15 +336,16 @@
       </section>
 
       <section class="loved" id="loved">
+        <div class="container">
         <h2 class="loved-title section-title"><span>Chocolate</span> is loved</h2>
         <ul class="loved-list">
           <li class="loved-item">
-            <img
+            <!-- <img
               src="./img/chocolate-is-love01.jpg"
               alt="photo Victoria Dobrzhanska"
               width="80"
               height="80"
-             class="loved-img"/>
+             class="loved-img"/> -->
             <h3 class="loved-subtitle">Victoria Dobrzhanska</h3>
             <p class="loved-text">
               I love this chocolate bar. Perfect combination of light crispy
@@ -347,26 +353,26 @@
             </p>
           </li>
           <li class="loved-item">
-            <img
+            <!-- <img
               src="./img/chocolate-is-love02.jpg"
               alt="photo Nazar Babenko"
               width="80"
               height="80"
-             class="loved-img"/>
+             class="loved-img"/> -->
             <h3 class="loved-subtitle">Nazar Babenko</h3>
             <p class="loved-text">
               This chocolate confection is a delight! A delight! The wafer is
               light and crisp, the hazelnut cream is smooth, and the chocolate
               is good.
             </p>
-          </li class="loved-item">
-          <li>
-            <img
+          </li>
+          <li class="loved-item">
+            <!-- <img
               src="./img/chocolate-is-love03.jpg"
               alt="photo Olena Kampusch"
               width="80"
               height="80"
-             class="loved-img"/>
+             class="loved-img"/> -->
             <h3 class="loved-subtitle">Olena Kampusch</h3>
             <p class="loved-text">
               Chocolate is a family favourite treat. Love the delicious smooth
@@ -377,10 +383,14 @@
         </ul>
         <button type="button" class="loved-btn">Leave a review</button>
       </section>
+      </div>
     </main>
 
     <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer-top">
       <p class="footer-text"> <span>Chocolate</span> a delicious cure for a bad day</p>
+      <div class="footer-social-wrap">
       <p class="footer-social-text">Social networks</p>
       <ul class="footer-social-list">
         <li class="footer-social-item">
@@ -392,6 +402,8 @@
         <li class="footer-social-item">
           <a href="" target="_blank" rel="noopener noreferrer" class="footer-social-links">Twitter</a></li>
       </ul>
+      </div>
+      <div class="adress-footer-wrap">
       <p class="footer-contacts">Contact us</p>
       <address class="footer-adress">
         <ul class="footer-adress-list">
@@ -401,6 +413,8 @@
           </li>
         </ul>
       </address>
+      </div>
+            </div>
       <nav class="footer-nav">
         <ul class="footer-nav-list">
           <li class="footer-nav-item"><a href="#header" target="_blank" rel="noopener noreferrer" class="footer-nav-links">Home</a></li>
@@ -416,6 +430,7 @@
           </li>
         </ul>
       </nav>
+      </div>
     </footer>
   </body>
 </html>

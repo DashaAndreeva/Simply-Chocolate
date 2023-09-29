@@ -1,5 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #fafafa;
 }
 
 ul {
@@ -64,7 +65,18 @@ address {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+
 .header-navigation {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
 }
 .header-logo {
   color: #111;
@@ -72,6 +84,9 @@ address {
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: -0.03em;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .header-logo-italic {
@@ -86,18 +101,22 @@ address {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: -0.02em;
-}
-
-.header-menu-list:hover,
-.header-menu-list:focus {
-  color: #fd9222;
+  display: flex;
+  gap: 24px;
 }
 
 .header-menu-item {
+  display: flex;
+  gap: 14px;
 }
+
 .header-menu-title {
 }
 .header-menu-link {
+}
+
+.header-menu-link:hover,
+.header-menu-link:focus {
 }
 
 /* ======================SECTION 1==================== */
@@ -128,12 +147,17 @@ address {
   line-height: normal;
   cursor: pointer;
   background-color: #fd9222;
+  padding: 14px 40px;
+  border-radius: 100px;
+  border: none;
+  margin-right: 14px;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #fcf1e0;
   color: #fd9222;
+  border: none;
 }
 
 .hero-btn-link {
@@ -141,12 +165,17 @@ address {
   font-size: 14px;
   font-weight: 600;
   line-height: normal;
+  padding: 14px 40px;
+  border-radius: 100px;
+  border: 1px solid #fff;
+  background-color: transparent;
 }
 
 .hero-btn-link:hover,
 .hero-btn-link:focus {
   border-color: #fd9222;
   color: #fd9222;
+  background-color: transparent;
 }
 
 .hero-btn-down {
@@ -155,11 +184,17 @@ address {
   font-weight: 500;
   line-height: 1.29;
   letter-spacing: -0.03em;
+  margin-left: auto;
 }
 
 .hero-btn-down:hover,
 .hero-btn-down:focus {
   color: #fd9222;
+}
+
+.hero-btns {
+  display: flex;
+  align-items: center;
 }
 
 /* Section 2 */
@@ -184,8 +219,13 @@ address {
 }
 
 .features-list {
+  display: flex;
+  gap: 88px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 .features-title {
+  width: calc((100% - 88px * 2) / 3);
 }
 .features-subtitle {
   color: #fff;
@@ -218,17 +258,37 @@ address {
   } */
 
 .taste-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 32px;
 }
 .taste-item {
   background-color: #fd9222;
   padding: 28px 23px;
   border-radius: 15px;
+  width: calc((100% - 96px) / 4);
 }
+
+.taste-item:nth-child(4n + 1) {
+  background-color: #fd9222;
+  color: #ffffff;
+}
+
+.taste-item:nth-child(2n) {
+  background-color: #ffffff;
+  color: #111111;
+  border: 1px solid #fd9222;
+}
+
+.taste-item:nth-child(4n + 3) {
+  background-color: #1e1823;
+  color: #ffffff;
+}
+
 .taste-img {
-  margin-bottom: 30px;
+  margin-bottom: 36px;
 }
 .taste-subtitle {
-  color: #111;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.29;
@@ -245,9 +305,19 @@ address {
   margin-bottom: 50px;
 }
 
+.made-wrap {
+  display: flex;
+  gap: 20px;
+}
+
 /* .made-title span {
     color: #fd9222;
   } */
+
+.made-content {
+  background-color: #ffffff;
+  padding: 32px;
+}
 
 .made-img {
 }
@@ -258,6 +328,7 @@ address {
   font-weight: 600;
   line-height: 1.33;
   margin-bottom: 28px;
+  max-width: 350px;
 }
 .made-list {
 }
@@ -291,10 +362,20 @@ address {
   } */
 
 .product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 18px;
 }
 .product-item {
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #fff;
+  width: calc((100% - 54px) / 4);
+  padding: 32px 20px;
+  text-align: center;
 }
 .product-img {
+  margin-bottom: 8px;
 }
 .product-subtitle {
   color: #111;
@@ -303,6 +384,7 @@ address {
   line-height: 1.33;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  margin-bottom: 2px;
 }
 .product-text {
   color: rgba(17, 17, 17, 0.7);
@@ -319,6 +401,10 @@ address {
   font-weight: 600;
   line-height: normal;
   cursor: pointer;
+  padding: 8px 20px;
+  border-radius: 100px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #fafafa;
 }
 
 /* ================================================= */
@@ -335,8 +421,11 @@ address {
 }
 
 .sellers-list {
+  display: flex;
+  gap: 16px;
 }
 .sellers-item {
+  width: calc((100% - 32px) / 3);
 }
 .sellers-img {
 }
@@ -359,16 +448,28 @@ address {
 
 /* Section 7 */
 .loved {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .loved-title {
+  margin-bottom: 90px;
 }
 
 .loved-title span {
 }
 
 .loved-list {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 50px;
 }
 .loved-item {
+  width: calc((100% - 56px) / 3);
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #fff;
+  box-shadow: 0px 9.04932px 100px 0px rgba(17, 17, 17, 0.03);
+  padding: 56px 24px 24px 24px;
 }
 .loved-img {
 }
@@ -378,6 +479,7 @@ address {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33;
+  margin-bottom: 24px;
 }
 .loved-text {
   color: rgba(17, 17, 17, 0.7);
@@ -395,6 +497,12 @@ address {
   line-height: normal;
   border: 1px solid #fd9222;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  padding: 14px 40px;
+  border-radius: 100px;
+  border: 1px solid #fd9222;
+  background-color: transparent;
 }
 
 .loved-btn:hover,
@@ -407,25 +515,41 @@ address {
 /* Footer */
 .footer {
   background-color: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 86px;
 }
+
+.footer-top {
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 50px;
+  margin-bottom: 24px;
+}
+
 .footer-text {
   color: #fff;
   font-size: 28px;
   font-weight: 500;
   line-height: 1.21;
   letter-spacing: -0.02em;
+  max-width: 300px;
+  margin-right: auto;
 }
 
 .footer-text span {
   color: #fd9222;
 }
 
+.footer-social-wrap {
+  margin-right: 50px;
+}
+
 .footer-social-text {
   color: #fff;
-  text-align: center;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.29;
+  margin-bottom: 14px;
 }
 .footer-social-list {
 }
@@ -435,16 +559,17 @@ address {
 }
 .footer-contacts {
   color: #fff;
-  text-align: center;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.29;
+  margin-bottom: 14px;
 }
 .footer-adress {
 }
 .footer-adress-list {
 }
-.adress-item {
+.adress-item:not(:last-child) {
+  margin-bottom: 4px;
 }
 .adress-links {
   color: #fff;
@@ -457,6 +582,8 @@ address {
 .footer-nav {
 }
 .footer-nav-list {
+  display: flex;
+  gap: 24px;
 }
 .footer-nav-item {
 }
