@@ -169,7 +169,7 @@ address {
       rgba(17, 17, 17, 0.4),
       rgba(17, 17, 17, 0.4)
     ),
-    url(../img/hero-bg.jpg);
+    url(./img/hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
