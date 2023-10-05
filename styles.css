@@ -411,20 +411,21 @@ address {
   font-weight: 400;
   line-height: 1.29;
   letter-spacing: -0.02em;
-  /* display: flex;
+  display: flex;
   gap: 8px;
-  align-items: start;
-  justify-content: start; */
+  align-items: center;
+  /* justify-content: start; */
 }
 
-/* .made-text::before {
+.made-text::before {
   content: "";
   display: block;
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background-color: #4c4c4c;
-} */
+  border: 1px solid #eceded;
+}
 /* =========================================== */
 
 /* Section 5 */
