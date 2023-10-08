@@ -109,6 +109,10 @@ address {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: -0.02em;
+  transition-property: color;
+  transition-duration: 500ms;
+  transition-delay: 100ms;
+  transition-timing-function: ease;
 }
 
 .header-menu-link:hover,
@@ -133,6 +137,7 @@ address {
   border-radius: 10px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   color: #111111;
+  transition: color 500ms 100ms ease, border-color 500ms 100ms ease;
 }
 
 .header-icons {
@@ -196,6 +201,7 @@ address {
   border-radius: 100px;
   border: none;
   margin-right: 14px;
+  transition: color 500ms 100ms ease, background-color 500ms 100ms ease;
 }
 
 .hero-btn:hover,
@@ -214,6 +220,7 @@ address {
   border-radius: 100px;
   border: 1px solid #fff;
   background-color: transparent;
+  transition: color 500ms 100ms ease, border-color 500ms 100ms ease;
 }
 
 .hero-btn-link:hover,
@@ -233,6 +240,7 @@ address {
   display: flex;
   gap: 14px;
   align-items: center;
+  transition: color 500ms 100ms ease;
 }
 
 .hero-btn-down::after {
@@ -244,6 +252,8 @@ address {
   background-image: url(./img/angle-left.svg);
   background-repeat: no-repeat;
   background-position: center;
+  transition: background-image 500ms 100ms ease,
+    background-color 500ms 100ms ease;
 }
 
 .hero-btn-down:hover,
