@@ -411,17 +411,21 @@ address {
   font-weight: 400;
   line-height: 1.29;
   letter-spacing: -0.02em;
-  display: flex;
+  position: relative;
+  /* display: flex;
   gap: 8px;
-  align-items: center;
+  align-items: center; */
   /* justify-content: start; */
 }
 
 .made-text::before {
   content: "";
-  display: block;
+  position: absolute;
+  /* /* display: block; */
   width: 8px;
   height: 8px;
+  top: 5px;
+  left: -16px;
   border-radius: 50%;
   background-color: #4c4c4c;
   border: 1px solid #eceded;
