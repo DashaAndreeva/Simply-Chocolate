@@ -594,34 +594,57 @@
         </p>
         <form class="modal-form">
           <div class="modal-fiel">
-            <label for="user-name" class="modal-label">Name</label>
-            <input
-              type="text"
-              name="user-name"
-              class="modal-input"
-              id="user-name"
-              required
-            />
+            <div class="modal-input-wrap">
+              <label for="user-name" class="modal-label">Name</label>
+              <input
+                type="text"
+                name="user-name"
+                class="modal-input"
+                id="user-name"
+                required
+              />
+              <svg class="modal-svg-input" width="24" height="24">
+                <use href="./img/icons.svg#icon-user"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-fiel">
-            <label for="user-email" class="modal-label">Email</label>
-            <input
-              type="text"
-              name="user-email"
-              class="modal-input"
-              id="user-email"
-              required
-            />
+            <div class="modal-input-wrap">
+              <label for="user-email" class="modal-label">Email</label>
+              <input
+                type="text"
+                name="user-email"
+                class="modal-input"
+                id="user-email"
+                required
+              />
+              <svg class="modal-svg-input" width="24" height="24">
+                <use href="./img/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-fiel">
-            <label for="user-phone" class="modal-label">Phone number</label>
-            <input
+            <div class="modal-input-wrap">
+              <label for="user-phone" class="modal-label">Phone number</label>
+              <input
+                type="text"
+                name="user-phone"
+                class="modal-input"
+                id="user-phone"
+                required
+              />
+              <svg class="modal-svg-input" width="24" height="24">
+                <use href="./img/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-fiel">
+            <textarea
               type="text"
               name="user-phone"
               class="modal-input"
               id="user-phone"
-              required
-            />
+            ></textarea>
           </div>
           <button type="submit">Send</button>
         </form>

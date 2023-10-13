@@ -779,8 +779,32 @@ address {
   margin-bottom: 40px;
 }
 
+.modal-fiel {
+  margin-bottom: 18px;
+}
+
+.modal-input-wrap {
+  position: relative;
+}
+
 .modal-label {
   display: block;
+  margin-bottom: 5px;
+  color: rgba(64, 64, 64, 0.3);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.02em;
+}
+
+.modal-svg-input {
+  fill: transparent;
+  stroke: #404040;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-8%);
+  left: 24px;
+  transition: stroke 500ms 100ms ease;
 }
 
 .modal-input {
@@ -790,5 +814,15 @@ address {
   border: 1px solid rgba(17, 17, 17, 0.3);
   box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
   background-color: transparent;
-  margin-bottom: 18px;
+  padding-left: 62px;
+  outline: transparent;
+  transition: border-color 500ms 100ms ease;
+}
+
+.modal-input:focus {
+  border-color: #fd9222;
+}
+
+.modal-input:focus + .modal-svg-input {
+  stroke: #fd9222;
 }
