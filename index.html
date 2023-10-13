@@ -584,8 +584,8 @@
     </footer>
     <div class="backdrop">
       <div class="modal">
-        <button type="button" class="modal-button">
-          <svg class="modal-svg-btn" width="28" height="28">
+        <button type="button" class="modal-btn">
+          <svg class="modal-btn-icon" width="28" height="28">
             <use href="./img/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -593,9 +593,9 @@
           LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span>
         </p>
         <form class="modal-form">
-          <div class="modal-fiel">
+          <div class="modal-field">
+            <label for="user-name" class="modal-label">Name</label>
             <div class="modal-input-wrap">
-              <label for="user-name" class="modal-label">Name</label>
               <input
                 type="text"
                 name="user-name"
@@ -603,47 +603,49 @@
                 id="user-name"
                 required
               />
-              <svg class="modal-svg-input" width="24" height="24">
+              <svg class="modal-icon" width="24" height="24">
                 <use href="./img/icons.svg#icon-user"></use>
               </svg>
             </div>
           </div>
-          <div class="modal-fiel">
+          <div class="modal-field">
+            <label for="user-email" class="modal-label">Email</label>
             <div class="modal-input-wrap">
-              <label for="user-email" class="modal-label">Email</label>
               <input
-                type="text"
+                type="email"
                 name="user-email"
                 class="modal-input"
                 id="user-email"
                 required
               />
-              <svg class="modal-svg-input" width="24" height="24">
+              <svg class="modal-icon" width="24" height="24">
                 <use href="./img/icons.svg#icon-mail"></use>
               </svg>
             </div>
           </div>
-          <div class="modal-fiel">
+          <div class="modal-field">
+            <label for="user-phone" class="modal-label">Email</label>
             <div class="modal-input-wrap">
-              <label for="user-phone" class="modal-label">Phone number</label>
               <input
-                type="text"
+                type="tel"
                 name="user-phone"
                 class="modal-input"
                 id="user-phone"
                 required
               />
-              <svg class="modal-svg-input" width="24" height="24">
+              <svg class="modal-icon" width="24" height="24">
                 <use href="./img/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
-          <div class="modal-fiel">
+
+          <div class="modal-field">
+            <label for="user-text" class="modal-label">Comment</label>
             <textarea
-              type="text"
-              name="user-phone"
-              class="modal-input"
-              id="user-phone"
+              name="user-text"
+              id="user-text"
+              class="modal-text"
+              placeholder="Enter text"
             ></textarea>
           </div>
           <button type="submit">Send</button>

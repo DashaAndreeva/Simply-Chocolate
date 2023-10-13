@@ -740,16 +740,19 @@ address {
   position: fixed;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(7.5px);
+  background-color: rgba(30, 24, 35, 0.494);
   top: 0;
   left: 0;
+  /* opacity: 0;
+  visibility: hidden;
+  pointer-events: none; */
 }
 
 .modal {
   width: 517px;
   height: 794px;
-  border-radius: 15px;
   background-color: #fafafa;
+  border-radius: 15px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -757,34 +760,50 @@ address {
   padding: 40px;
 }
 
-.modal-button {
+.modal-btn {
   background-color: transparent;
   border: none;
   width: 28px;
   height: 28px;
   padding: 0;
   position: absolute;
-  top: 24px;
   right: 24px;
+  top: 24px;
 }
 
-.modal-svg-btn {
+.modal-btn-icon {
   fill: transparent;
   stroke: #111111;
 }
 
 .modal-title {
-  max-width: 298px;
   text-align: left;
+  max-width: 300px;
   margin-bottom: 40px;
 }
 
-.modal-fiel {
+.modal-field {
   margin-bottom: 18px;
 }
 
-.modal-input-wrap {
-  position: relative;
+.modal-input {
+  width: 100%;
+  height: 68px;
+  border-radius: 13px;
+  border: 1px solid rgba(17, 17, 17, 0.23);
+  background-color: inherit;
+  font-size: 18px;
+  padding-left: 62px;
+  outline: transparent;
+  transition: border-color 500ms 100ms ease;
+}
+
+.modal-input:focus {
+  border-color: #fd9222;
+}
+
+.modal-input:focus + .modal-icon {
+  stroke: #fd9222;
 }
 
 .modal-label {
@@ -797,32 +816,29 @@ address {
   letter-spacing: -0.02em;
 }
 
-.modal-svg-input {
+.modal-input-wrap {
+  position: relative;
+}
+
+.modal-icon {
   fill: transparent;
   stroke: #404040;
   position: absolute;
   top: 50%;
-  transform: translateY(-8%);
+  transform: translateY(-50%);
   left: 24px;
   transition: stroke 500ms 100ms ease;
 }
 
-.modal-input {
+.modal-text {
   width: 100%;
-  height: 68px;
+  height: 137px;
   border-radius: 13px;
-  border: 1px solid rgba(17, 17, 17, 0.3);
-  box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
-  background-color: transparent;
-  padding-left: 62px;
+  border: 1px solid rgba(17, 17, 17, 0.23);
+  background-color: inherit;
+  font-size: 18px;
+  padding: 22px 24px;
   outline: transparent;
   transition: border-color 500ms 100ms ease;
-}
-
-.modal-input:focus {
-  border-color: #fd9222;
-}
-
-.modal-input:focus + .modal-svg-input {
-  stroke: #fd9222;
+  resize: none;
 }
