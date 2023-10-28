@@ -972,6 +972,63 @@ address {
   resize: none;
 }
 
+.modal-box-checkbox {
+}
+
+.modal-check-icon {
+  fill: #ffffff;
+}
+
+.check-text {
+  /* display: inline-flex; */
+  color: #8e8f99;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+
+.check-text a {
+  color: #fd9222;
+  text-decoration: underline;
+  margin-left: 3px;
+}
+
+.check-text span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  margin-right: 4px;
+  fill: transparent;
+}
+
+.modal-accept:checked + .check-text span {
+  background-color: #fd9222;
+  border: none;
+  fill: #f4f4fd;
+}
+
+.button-submit-modal {
+  margin-top: 40px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  padding: 14px 40px;
+  border-radius: 100px;
+  background-color: #fd9222;
+  border: none;
+  transition: background-color 500ms 100ms ease;
+}
+
+.button-submit-modal:hover,
+.button-submit-modal:focus {
+  background-color: #ff8400;
+}
 .is-open {
   opacity: 1;
   visibility: visible;

@@ -654,7 +654,7 @@
         </nav>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-btn">
           <svg class="modal-btn-icon" width="28" height="28">
@@ -720,7 +720,25 @@
               placeholder="Enter text"
             ></textarea>
           </div>
-          <button type="submit">Send</button>
+          <div class="modal-box-checkbox">
+            <input
+              type="checkbox"
+              name="user-privacy"
+              class="modal-accept visually-hidden"
+              id="user-privacy"
+              value="true"
+            />
+          <label for="user-privacy" class="check-text">
+            <span class="accept-modal-vector">
+              <svg class="modal-check-icon" width="10" height="8">
+                <use href="./img/icons.svg#icon-accept"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a href="" class="privacy-policy">Privacy Policy</a>
+          </label>
+
+          <button type="submit" class="button-submit-modal">Send</button>
         </form>
       </div>
     </div>
