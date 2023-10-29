@@ -350,12 +350,12 @@ address {
 
 /* Section 3 */
 .taste {
-  padding-top: 120px;
+  padding-top: 80px;
 }
 .taste-title {
-  max-width: 412px;
+  max-width: 283px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 
 /* .taste-title span {
@@ -363,16 +363,17 @@ address {
   } */
 
 .taste-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px 32px;
 }
 .taste-item {
   position: relative;
   background-color: #fd9222;
-  padding: 28px 23px;
+  padding: 28px;
   border-radius: 15px;
-  width: calc((100% - 96px) / 4);
+  margin-bottom: 20px;
+}
+
+.taste-item:nth-child(n + 5) {
+  display: none;
 }
 
 .taste-item:nth-child(4n + 1) {
@@ -396,8 +397,8 @@ address {
   right: 15px;
   top: 15px;
   background-color: transparent;
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   border: 1px solid #fafafa;
   display: flex;
@@ -418,11 +419,12 @@ address {
 }
 
 .taste-img {
-  margin-bottom: 36px;
+  margin-bottom: 16px;
 }
 .taste-subtitle {
   font-size: 14px;
   font-weight: 600;
+  font-style: normal;
   line-height: 1.29;
   letter-spacing: -0.02em;
 }
@@ -1099,6 +1101,41 @@ address {
   .features-title {
     width: calc((100% - 88px) / 2);
   }
+
+  /* Taste */
+  .taste {
+    padding-top: 100px;
+  }
+
+  .taste-title {
+    max-width: 411px;
+    margin-bottom: 50px;
+  }
+
+  .taste-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .taste-item {
+    padding: 28px 50px;
+    width: calc((100% - 32px) / 2);
+    margin-bottom: 0;
+  }
+
+  .taste-item:nth-child(n + 5) {
+    display: block;
+  }
+
+  .btn-taste {
+    width: 30px;
+    height: 30px;
+  }
+
+  .taste-img {
+    margin-bottom: 36px;
+  }
 }
 
 /* Desctop */
@@ -1180,5 +1217,41 @@ address {
     width: 1px;
     height: 124px;
     background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  /* Taste */
+
+  .taste {
+    padding-top: 120px;
+  }
+
+  .taste-title {
+    max-width: 412px;
+    margin-bottom: 50px;
+  }
+
+  .taste-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px 24px;
+  }
+
+  .taste-item {
+    padding: 28px;
+    width: calc((100% - 96px) / 4);
+    margin-bottom: 0;
+  }
+
+  .taste-item:nth-child(n + 5) {
+    display: block;
+  }
+
+  .btn-taste {
+    width: 30px;
+    height: 30px;
+  }
+
+  .taste-img {
+    margin-bottom: 36px;
   }
 }
