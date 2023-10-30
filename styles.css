@@ -570,10 +570,10 @@ address {
 
 /* Section 6 */
 .sellers {
-  padding-top: 120px;
+  padding-top: 80px;
 }
 .sellers-title {
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 
 .sellers-title span {
@@ -581,10 +581,11 @@ address {
 
 .sellers-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
 }
 .sellers-item {
-  width: calc((100% - 32px) / 3);
+  width: 300px;
   cursor: pointer;
 }
 
@@ -602,8 +603,8 @@ address {
   line-height: 1.33;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   text-align: center;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-top: none;
@@ -612,6 +613,7 @@ address {
 }
 
 .sellers-cover-wrap {
+  border-radius: 15px 15px 0px 0px;
   position: relative;
   overflow: hidden;
 }
@@ -1197,6 +1199,37 @@ address {
     width: calc((100% - 32px) / 2);
     padding: 32px 20px;
   }
+
+  /* Sellers */
+
+  .sellers {
+    padding-top: 120px;
+  }
+
+  .sellers-title {
+    margin-bottom: 50px;
+  }
+
+  .sellers-list {
+    flex-wrap: nowrap;
+  }
+
+  .sellers-item {
+    width: calc((100% - 16px) / 2);
+  }
+
+  .item-hidden {
+    display: none;
+  }
+
+  .sellers-cover-wrap {
+    overflow: hidden;
+  }
+
+  .sellers-subtitle {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
 }
 
 /* Desctop */
@@ -1368,5 +1401,35 @@ address {
   .product-item {
     width: calc((100% - 54px) / 4);
     padding: 32px 20px;
+  }
+
+  /* Sellers */
+
+  .sellers {
+    padding-top: 120px;
+  }
+
+  .sellers-title {
+    margin-bottom: 50px;
+  }
+
+  .sellers-list {
+    flex-wrap: nowrap;
+  }
+
+  .sellers-item {
+    width: calc((100% - 32px) / 3);
+  }
+  .item-hidden {
+    display: block;
+  }
+
+  .sellers-cover-wrap {
+    overflow: hidden;
+  }
+
+  .sellers-subtitle {
+    padding-top: 28px;
+    padding-bottom: 28px;
   }
 }
