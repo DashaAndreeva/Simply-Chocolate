@@ -510,10 +510,10 @@ address {
 
 /* Section 5 */
 .product {
-  padding-top: 120px;
+  padding-top: 80px;
 }
 .product-title {
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 
 /* .product-title span {
@@ -523,14 +523,14 @@ address {
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px 18px;
+  gap: 32px;
 }
 .product-item {
   border-radius: 15px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   background: #fff;
-  width: calc((100% - 54px) / 4);
-  padding: 32px 20px;
+
+  padding: 32px 35px;
   text-align: center;
 }
 .product-img {
@@ -1179,6 +1179,24 @@ address {
   .made-item:last-child {
     margin-bottom: 0;
   }
+
+  /* Product */
+  .product {
+    padding-top: 100px;
+  }
+
+  .product-title {
+    margin-bottom: 50px;
+  }
+
+  .product-list {
+    gap: 32px 32px;
+  }
+
+  .product-item {
+    width: calc((100% - 32px) / 2);
+    padding: 32px 20px;
+  }
 }
 
 /* Desctop */
@@ -1332,5 +1350,23 @@ address {
   }
   .made-item:last-child {
     margin-bottom: 0;
+  }
+
+  /* Product */
+  .product {
+    padding-top: 120px;
+  }
+
+  .product-title {
+    margin-bottom: 50px;
+  }
+
+  .product-list {
+    gap: 24px 18px;
+  }
+
+  .product-item {
+    width: calc((100% - 54px) / 4);
+    padding: 32px 20px;
   }
 }
