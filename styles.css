@@ -433,14 +433,15 @@ address {
 /* Section 4 */
 
 .made {
-  padding-top: 120px;
+  padding-top: 75px;
 }
 .made-title {
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 
 .made-wrap {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -450,10 +451,16 @@ address {
 
 .made-content {
   background-color: #ffffff;
-  padding: 32px;
+  padding: 20px 30px;
+
+  border-radius: 15px;
 }
 
+/* Когда поменяю картинку для телефона убрать width i heidht */
+
 .made-img {
+  width: 300px;
+  height: 500px;
 }
 .made-subtitle {
   color: #111;
@@ -461,13 +468,13 @@ address {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33;
-  margin-bottom: 28px;
-  max-width: 350px;
+  margin-bottom: 20px;
+  max-width: 307px;
 }
 .made-list {
 }
 .made-item {
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .made-item:last-child {
@@ -1136,6 +1143,42 @@ address {
   .taste-img {
     margin-bottom: 36px;
   }
+
+  /* Made */
+  .made {
+    padding-top: 100px;
+  }
+
+  .made-title {
+    margin-bottom: 50px;
+  }
+
+  .made-wrap {
+    flex-wrap: wrap;
+  }
+
+  .made-content {
+    background-color: #ffffff;
+    padding: 32px 32px 32px 50px;
+    border-radius: none;
+  }
+  /* Убрать когда поменяю картинку */
+  .made-img {
+    width: 620px;
+    height: 400px;
+  }
+
+  .made-subtitle {
+    margin-bottom: 20px;
+    max-width: 350px;
+  }
+
+  .made-item {
+    margin-bottom: 24px;
+  }
+  .made-item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 /* Desctop */
@@ -1253,5 +1296,41 @@ address {
 
   .taste-img {
     margin-bottom: 36px;
+  }
+
+  /* Made */
+  .made {
+    padding-top: 120px;
+  }
+
+  .made-title {
+    margin-bottom: 50px;
+  }
+
+  .made-wrap {
+    flex-wrap: nowrap;
+  }
+
+  .made-content {
+    background-color: #ffffff;
+    padding: 32px 32px 32px 50px;
+    border-radius: none;
+  }
+  /* Убрать когда поменяю картинку */
+  .made-img {
+    width: 600px;
+    height: 400px;
+  }
+
+  .made-subtitle {
+    margin-bottom: 28px;
+    max-width: 350px;
+  }
+
+  .made-item {
+    margin-bottom: 24px;
+  }
+  .made-item:last-child {
+    margin-bottom: 0;
   }
 }
