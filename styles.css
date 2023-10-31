@@ -722,27 +722,34 @@ address {
 /* ================================================= */
 
 /* Footer */
+
+.footer > .container {
+  padding: 0;
+}
+
 .footer {
   background-color: #1e1823;
-  padding-top: 50px;
-  padding-bottom: 86px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .footer-top {
   display: flex;
+  flex-wrap: wrap;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding-bottom: 50px;
-  margin-bottom: 24px;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .footer-text {
   color: #fff;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 500;
-  line-height: 1.21;
+  line-height: 1.17;
   letter-spacing: -0.02em;
   max-width: 300px;
   margin-right: auto;
+  margin-bottom: 32px;
 }
 
 .footer-text span {
@@ -751,6 +758,7 @@ address {
 
 .footer-social-wrap {
   margin-right: 50px;
+  margin-bottom: 32px;
 }
 
 .footer-social-text {
@@ -814,12 +822,12 @@ address {
 }
 .footer-nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footer-nav-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 18px;
 }
 .footer-nav-item {
 }
@@ -841,15 +849,16 @@ address {
   display: flex;
   gap: 8px;
   align-items: center;
-  width: 458px;
+  width: 335px;
+  margin-top: 32px;
 }
 
 .footer-input {
   color: #fafafa;
   background-color: transparent;
-  width: 313px;
-  height: 52px;
-  padding: 14px 24px;
+  width: 207px;
+  height: 45px;
+  padding: 14px 18px;
   border-radius: 30px;
   outline: none;
   border: 1.5px solid rgba(255, 255, 255, 0.15);
@@ -861,7 +870,7 @@ address {
 }
 
 .button-form {
-  padding: 17px 40px;
+  padding: 14px 26px;
   color: #fff;
   font-size: 14px;
   font-weight: 600;
@@ -1270,6 +1279,38 @@ address {
     font-size: 18px;
     padding: 14px 40px;
   }
+
+  /* Footer */
+
+  .footer-top {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+  }
+
+  .footer-nav {
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  .footer-nav-list {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .footer-form {
+    width: 368px;
+    margin-top: 0;
+  }
+
+  .footer-input {
+    width: 233px;
+    height: 45px;
+    padding: 14px 24px;
+  }
+
+  .button-form {
+    padding: 14px 28px;
+  }
 }
 
 /* Desctop */
@@ -1502,5 +1543,54 @@ address {
   .loved-btn {
     font-size: 18px;
     padding: 14px 40px;
+  }
+
+  /* Footer */
+
+  .footer > .container {
+    padding: 0 15px;
+  }
+
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .footer-top {
+    flex-wrap: nowrap;
+    padding-bottom: 50px;
+    margin-bottom: 24px;
+  }
+
+  .footer-text {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.21;
+    margin-bottom: 0;
+  }
+
+  .footer-nav {
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  .footer-nav-list {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .footer-form {
+    width: 458px;
+    margin-top: 0;
+  }
+
+  .footer-input {
+    width: 313px;
+    height: 52px;
+    padding: 14px 24px;
+  }
+
+  .button-form {
+    padding: 17px 40px;
   }
 }
