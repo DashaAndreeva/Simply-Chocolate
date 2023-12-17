@@ -867,26 +867,26 @@ address {
 }
 
 .modal {
-  width: 517px;
-  height: 794px;
+  width: 311px;
+  height: 622px;
   background-color: #fafafa;
   border-radius: 15px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 40px;
+  padding: 32px;
 }
 
 .modal-btn {
   background-color: transparent;
   border: none;
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   padding: 0;
   position: absolute;
-  right: 24px;
-  top: 24px;
+  right: 14px;
+  top: 14px;
 }
 
 .modal-btn-icon {
@@ -896,22 +896,23 @@ address {
 
 .modal-title {
   text-align: left;
-  max-width: 300px;
-  margin-bottom: 40px;
+  max-width: 255px;
+  margin-bottom: 25px;
+  margin-top: 10px;
 }
 
 .modal-field {
-  margin-bottom: 18px;
+  margin-bottom: 5px;
 }
 
 .modal-input {
   width: 100%;
-  height: 68px;
+  height: 46px;
   border-radius: 13px;
   border: 1px solid rgba(17, 17, 17, 0.23);
   background-color: inherit;
   font-size: 18px;
-  padding-left: 62px;
+  padding-left: 50px;
   outline: transparent;
   transition: border-color 500ms 100ms ease;
 }
@@ -1002,7 +1003,7 @@ address {
 }
 
 .button-submit-modal {
-  margin-top: 40px;
+  margin-top: 20px;
   color: #fff;
   font-size: 14px;
   font-weight: 600;
@@ -1346,6 +1347,24 @@ address {
 
   .button-form {
     padding: 14px 28px;
+  }
+
+  /* Backdrop */
+  .modal {
+    width: 517px;
+    padding: 40px;
+  }
+  .modal-btn {
+    right: 24px;
+    top: 24px;
+  }
+
+  .modal-title {
+    max-width: 298px;
+  }
+
+  .modal-input {
+    padding-left: 50px;
   }
 }
 
@@ -1702,5 +1721,37 @@ address {
 
   .button-form {
     padding: 17px 40px;
+  }
+
+  /* Backdrop */
+
+  .modal {
+    width: 517px;
+    height: 785px;
+    padding: 40px;
+  }
+  .modal-btn {
+    width: 28px;
+    height: 28px;
+    right: 24px;
+    top: 24px;
+  }
+
+  .modal-title {
+    max-width: 300px;
+    margin-bottom: 40px;
+  }
+
+  .modal-input {
+    height: 68px;
+    padding-left: 62px;
+  }
+
+  .modal-field {
+    margin-bottom: 18px;
+  }
+
+  .button-submit-modal {
+    margin-top: 40px;
   }
 }
