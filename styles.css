@@ -40,9 +40,7 @@ address {
 
 .container {
   max-width: 335px;
-  padding: 0 20px;
   margin: 0 auto;
-  /* outline: 2px solid red; */
 }
 
 .section-title {
@@ -61,14 +59,12 @@ address {
 /* ======================HEADER==================== */
 
 .header {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .header-container {
   display: flex;
-  align-items: center;
-  gap: 90px;
 }
 
 .header-navigation {
@@ -79,9 +75,9 @@ address {
 }
 .header-logo {
   color: #111;
-  font-size: 18px;
   font-weight: 700;
-  line-height: 1.11;
+  font-size: 14px;
+  line-height: 1.29;
   letter-spacing: -0.03em;
   display: flex;
   align-items: center;
@@ -92,61 +88,24 @@ address {
   font-style: italic;
 }
 
-.header-logo-img {
-}
 .header-menu-list {
-  display: flex;
-  gap: 24px;
-}
-
-.header-menu-item {
-}
-
-.header-menu-link {
-  color: #111;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: -0.02em;
-  transition-property: color;
-  transition-duration: 500ms;
-  transition-delay: 100ms;
-  transition-timing-function: ease;
-}
-
-.header-menu-link:hover,
-.header-menu-link:focus {
-  color: #fd9222;
+  display: none;
 }
 
 .header-soc-list {
-  display: flex;
-  gap: 14px;
-}
-.header-soc-item {
-  width: 40px;
-  height: 40px;
-}
-.header-soc-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  border: 1px solid rgba(17, 17, 17, 0.1);
-  color: #111111;
-  transition: color 500ms 100ms ease, border-color 500ms 100ms ease;
+  display: none;
 }
 
-.header-icons {
-  fill: currentColor;
+.btn-open-menu {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
 }
 
-.header-soc-link:hover,
-.header-soc-link:focus {
-  border-color: rgba(253, 146, 34, 0.1);
-  color: #fd9222;
+.menu-open {
+  fill: #111111;
 }
 
 /* То же самое только длиннее */
@@ -1068,8 +1027,6 @@ address {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 704px;
-    padding-left: 32px;
-    padding-right: 32px;
     margin: 0 auto;
     /* outline: 2px solid red; */
   }
@@ -1078,6 +1035,82 @@ address {
     font-size: 24px;
   }
 
+  /* Header */
+  .header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .header-container {
+    align-items: center;
+    gap: 28px;
+  }
+
+  .header-logo {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+
+  .header-navigation {
+    gap: 20px;
+  }
+
+  .header-menu-list {
+    width: 280px;
+    display: flex;
+    gap: 20px;
+  }
+  .header-menu-link {
+    color: #111;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    transition-property: color;
+    transition-duration: 500ms;
+    transition-delay: 100ms;
+    transition-timing-function: ease;
+  }
+
+  .header-menu-link:hover,
+  .header-menu-link:focus {
+    color: #fd9222;
+  }
+
+  .header-soc-list {
+    display: flex;
+    gap: 14px;
+  }
+
+  .header-soc-item {
+    width: 40px;
+    height: 40px;
+  }
+  .header-soc-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    color: #111111;
+    transition: color 500ms 100ms ease, border-color 500ms 100ms ease;
+  }
+
+  .header-icons {
+    fill: currentColor;
+  }
+
+  .header-soc-link:hover,
+  .header-soc-link:focus {
+    border-color: rgba(253, 146, 34, 0.1);
+    color: #fd9222;
+  }
+
+  .btn-open-menu {
+    display: none;
+  }
   /* Hero */
   .hero-container {
     padding: 670px 40px 40px 40px;
@@ -1328,6 +1361,80 @@ address {
 
   .section-title {
     font-size: 24px;
+  }
+
+  /* Header */
+
+  .header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .header-container {
+    align-items: center;
+    gap: 90px;
+  }
+
+  .header-logo {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+
+  .header-menu-list {
+    width: 320px;
+    display: flex;
+    gap: 24px;
+  }
+  .header-menu-link {
+    color: #111;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    transition-property: color;
+    transition-duration: 500ms;
+    transition-delay: 100ms;
+    transition-timing-function: ease;
+  }
+
+  .header-menu-link:hover,
+  .header-menu-link:focus {
+    color: #fd9222;
+  }
+
+  .header-soc-list {
+    display: flex;
+    gap: 14px;
+  }
+
+  .header-soc-item {
+    width: 40px;
+    height: 40px;
+  }
+  .header-soc-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    color: #111111;
+    transition: color 500ms 100ms ease, border-color 500ms 100ms ease;
+  }
+
+  .header-icons {
+    fill: currentColor;
+  }
+
+  .header-soc-link:hover,
+  .header-soc-link:focus {
+    border-color: rgba(253, 146, 34, 0.1);
+    color: #fd9222;
+  }
+
+  .btn-open-menu {
+    display: none;
   }
 
   /* Hero */
