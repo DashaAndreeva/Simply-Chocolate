@@ -415,12 +415,6 @@ address {
   border-radius: 15px;
 }
 
-/* Когда поменяю картинку для телефона убрать width i heidht */
-
-.made-img {
-  width: 300px;
-  height: 500px;
-}
 .made-subtitle {
   color: #111;
   font-family: Montserrat;
@@ -475,10 +469,6 @@ address {
   margin-bottom: 32px;
 }
 
-/* .product-title span {
-    color: #fd9222;
-  } */
-
 .product-list {
   display: flex;
   flex-wrap: wrap;
@@ -489,7 +479,7 @@ address {
   border: 1px solid rgba(17, 17, 17, 0.1);
   background: #fff;
 
-  padding: 32px 35px;
+  padding: 52px;
   text-align: center;
 }
 .product-img {
@@ -1216,11 +1206,6 @@ address {
     padding: 32px 32px 32px 50px;
     border-radius: none;
   }
-  /* Убрать когда поменяю картинку */
-  .made-img {
-    width: 620px;
-    height: 400px;
-  }
 
   .made-subtitle {
     margin-bottom: 20px;
@@ -1576,11 +1561,6 @@ address {
     background-color: #ffffff;
     padding: 32px 32px 32px 50px;
     border-radius: none;
-  }
-  /* Убрать когда поменяю картинку */
-  .made-img {
-    width: 600px;
-    height: 400px;
   }
 
   .made-subtitle {

@@ -275,13 +275,32 @@
         <div class="container">
           <h2 class="made-title section-title">How it's <span>made</span></h2>
           <div class="made-wrap">
-            <img
+            <picture>
+              <source
+                srcset="./img/how-its-made.jpg"
+                media="(min-width:1158px)"
+              />
+              <source
+                srcset="
+                  ./img/how-its-made-table.jpg"
+                width="704"
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                ./img/how-its-made-mobile.jpg"
+                width="335"
+                media="(min-width:320px)"
+              />
+              <img
               src="./img/how-its-made.jpg"
               alt="chocolade-made"
               width="600"
               height="400"
               class="made-img"
             />
+            </picture>
+            
             <div class="made-content">
               <h3 class="made-subtitle">
                 Try our chocolates today and discover the perfect balance of
@@ -504,7 +523,7 @@
           <ul class="loved-list">
             <li class="loved-item">
               <img
-                src="./img/chocolate-is-love01.jpg"
+                src="./img/chocolate-is-love01.png"
                 alt="photo Victoria Dobrzhanska"
                 width="80"
                 height="80"
@@ -518,7 +537,7 @@
             </li>
             <li class="loved-item hidden-two">
               <img
-                src="./img/chocolate-is-love02.jpg"
+                src="./img/chocolate-is-love02.png"
                 alt="photo Nazar Babenko"
                 width="80"
                 height="80"
@@ -533,7 +552,7 @@
             </li>
             <li class="loved-item hidden-three">
               <img
-                src="./img/chocolate-is-love03.jpg"
+                src="./img/chocolate-is-love03.png"
                 alt="photo Olena Kampusch"
                 width="80"
                 height="80"
